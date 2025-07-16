@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* DW Kioo Dark Theme - Digital Fortress */
+    --background: 220 15% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 35 91% 51%;
+    --primary-foreground: 220 15% 8%;
+
+    --secondary: 220 20% 14%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 5% 65%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 220 15% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 35 91% 51%;
+
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+    --info: 217 91% 60%;
+    
+    /* Professional gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(35 91% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(217 91% 55%));
+    --gradient-dark: linear-gradient(135deg, hsl(220 20% 10%), hsl(220 15% 8%));
+    
+    /* Shadows for depth */
+    --shadow-elegant: 0 10px 30px -10px hsl(220 20% 5% / 0.5);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.2);
+    
+    /* Threat Level Colors */
+    --threat-low: 120 60% 50%;
+    --threat-elevated: 45 90% 55%;
+    --threat-critical: 0 85% 55%;
+    
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 20% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 35 91% 51%;
+    --sidebar-primary-foreground: 220 15% 8%;
+    --sidebar-accent: 220 20% 14%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 35 91% 51%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
